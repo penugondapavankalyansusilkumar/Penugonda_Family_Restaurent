@@ -1,0 +1,481 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+
+body{
+    background:#ffffff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    background:#222;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+/* DARK MODE BUTTON */
+
+#themeBtn{
+    background:orange;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:90vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("img2.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:orange;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#ff8800;
+}
+
+/* SECTION HEADINGS */
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* POPULAR FOODS */
+
+.foods{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.card{
+    width:280px;
+    display:inline-block;
+    margin:15px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+/* GALLERY */
+
+.gallery{
+    padding:60px 20px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.gallery img{
+    width:280px;
+    height:200px;
+    margin:10px;
+    border-radius:10px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* TESTIMONIAL */
+
+.testimonial{
+    padding:60px 20px;
+    text-align:center;
+}
+
+#review{
+    font-size:24px;
+    font-weight:bold;
+    color:orange;
+}
+
+/* RESERVATION */
+
+#reservation{
+    padding:60px 20px;
+    background:#f5f5f5;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:12px 20px;
+    background:orange;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff8800;
+}
+
+/* ABOUT PAGE */
+
+.about{
+    padding:60px 30px;
+    text-align:center;
+}
+
+.about p{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* MENU PAGE */
+
+#search{
+    width:80%;
+    max-width:500px;
+    display:block;
+    margin:30px auto;
+    padding:12px;
+}
+
+#menuList{
+    list-style:none;
+    max-width:600px;
+    margin:auto;
+}
+
+#menuList li{
+    padding:15px;
+    border-bottom:1px solid #ccc;
+    font-size:18px;
+}
+.menu-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:30px;
+}
+
+.menu-card{
+    width:250px;
+    padding:25px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+    background:orange;
+    color:white;
+}
+
+h2{
+    text-align:center;
+    margin-top:30px;
+}
+
+#search{
+    width:80%;
+    max-width:500px;
+    display:block;
+    margin:20px auto;
+    padding:12px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+/* CONTACT PAGE */
+
+iframe{
+    margin-top:20px;
+    border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+
+    background:#25D366;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+    font-size:28px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* TOP BUTTON */
+
+#topBtn{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+
+    display:none;
+
+    padding:12px 15px;
+
+    background:orange;
+    color:white;
+
+    border:none;
+    border-radius:50%;
+
+    cursor:pointer;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode header{
+    background:black;
+}
+
+.dark-mode footer{
+    background:black;
+}
+
+.dark-mode .card{
+    background:#222;
+    color:white;
+}
+
+.dark-mode .gallery{
+    background:#1d1d1d;
+}
+
+.dark-mode #reservation{
+    background:#1d1d1d;
+}
+
+.dark-mode input,
+.dark-mode textarea{
+    background:#333;
+    color:white;
+    border:1px solid #555;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .hero h2{
+        font-size:35px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .gallery img{
+        width:90%;
+        height:auto;
+    }
+
+    section h2{
+        font-size:28px;
+    }
+}
+/* BOOKING SUCCESS MESSAGE */
+
+#successMsg{
+    display:none;
+    max-width:700px;
+    margin:25px auto;
+    padding:20px;
+
+    background:#e8f5e9;
+    border-left:6px solid #4CAF50;
+    border-radius:10px;
+
+    color:#2e7d32;
+    font-size:18px;
+    line-height:1.8;
+    text-align:center;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* BOOKING PAGE */
+
+.booking-container{
+    max-width:700px;
+    margin:50px auto;
+    padding:30px;
+
+    background:white;
+
+    border-radius:10px;
+
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+.booking-container h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:orange;
+}
+
+.booking-container input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+/* DARK MODE BOOKING */
+
+.dark-mode .booking-container{
+    background:#222;
+    color:white;
+}
+
+.dark-mode #successMsg{
+    background:#1b5e20;
+    color:white;
+    border-left:6px solid #66bb6a;
+}

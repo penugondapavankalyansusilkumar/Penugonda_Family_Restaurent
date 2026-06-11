@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Booking</title>
+
+    <link rel="stylesheet" href="restaurent.css">
+</head>
+
+<body>
+
+    <div class="booking-container">
+
+        <h1>Order Food</h1>
+
+        <form id="orderForm">
+
+            <label>Selected Item</label>
+            <input type="text" id="foodItem" readonly>
+
+            <br><br>
+
+            <input type="text"
+                   placeholder="Enter Your Name"
+                   required>
+
+            <br><br>
+
+            <input type="tel"
+                   placeholder="Phone Number"
+                   required>
+
+            <br><br>
+
+            <input type="number"
+                   placeholder="Quantity"
+                   min="1"
+                   required>
+
+            <br><br>
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+        <p id="successMsg"></p>
+
+    </div>
+
+    <script>
+
+        const params = new URLSearchParams(window.location.search);
+
+        const item = params.get("item");
+
+        if(item){
+            document.getElementById("foodItem").value = item;
+        }
+
+        document.getElementById("orderForm")
+        .addEventListener("submit", function(e){
+
+            e.preventDefault();
+
+            document.getElementById("successMsg").style.display = "block";
+
+            document.getElementById("successMsg").innerHTML =
+
+            "✅ <strong>Order Confirmed!</strong><br><br>" +
+
+            "Thank you for choosing <strong>Penugonda Restaurant</strong>. 🍴<br>" +
+
+            "Your order for <strong>" + item + "</strong> has been placed successfully.<br>" +
+
+            "Our chefs are preparing your meal with fresh ingredients. 😊<br><br>" +
+
+            "⏱ Estimated Preparation Time: 20-30 Minutes.<br>" +
+
+            "📞 Our team will contact you shortly.<br><br>" +
+
+            "🙏 Thank you for dining with us!";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
